@@ -223,3 +223,108 @@ https://www.youtube.com/watch?v=TQVl5-G3u2U&
 
 ![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588839830092_image.png)
 
+----------
+# Big Data
+>  It is high- volume, -velocity and -variety information assets that demands cost-effective and innovating forms of information processing
+## Three V’s ✌️ 
+- **Volume:** too much of data
+****- **Velocity:** speed at which data is generated, processing should be faster than generation
+****- **Variety:** there are different types of data
+
+some additional 😫 :
+
+- **veracity:** depicts messiness, or trustworthiness
+- **value:** getting value out of big data( sort of searching)
+
+
+## How to store Huge Files?? 🤷‍♂️ 
+- efficient access
+- effective utilization of space
+- redundancy or failsafe
+
+
+## HDFS:
+> It  is basically a file system. Just like a well-organized book, a HDFS  helps navigate data that is stored in your storage.
+> It divides data in equal chunks of 128 MB 
+> 
+![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588842614934_image.png)
+
+
+**DataNode:-**
+A DataNode stores data in HDFS.
+
+**NameNOde:-** 
+
+- keeps directory tree of all files in the file system.
+- it tracks where file is stored among clusters
+- Does not store the data of these files itself.
+- two states: active & stand-by
+
+**Secondary NameNode:-**
+
+- helper for namenode
+- puts a check point in file system for namenode to function better
+
+**architecture of HDFS:-**
+
+![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588842665367_image.png)
+
+
+
+> **to ensure data is not lost, data can typically be replicated on :**
+- local rack
+- remote rack
+- remote node
+- randomly
+> Default replication rate is 3 😍 
+
+**Benefits of HDFS**
+
+- **HDFS supports the concept of blocks:** When uploading a file into HDFS, the file is divided into fixed-size blocks to support distributed computation. HDFS keeps track of all the blocks in the cluster.
+- **HDFS maintains data integrity:** Data failures or data corruption are inevitable in any big data environment. So, it maintains data integrity and helps recover from data loss by replicating the blocks and more than the node.
+- **HDFS supports scaling:** If you like to expand your cluster by adding more nodes, it’s very easy to do with HDFS.
+- **No particular hardware required:** There is no need for any specialized hardware to run or operate HDFS. It is basically built up to work with commodity computers.
+
+
+----------
+# Hadoop
+> framework for distributed processing of large data sets.
+> it  is designed to scale up from single servers to thousand of machines
+> It is designed to handle failures
+
+**Modules:-**
+
+- Hdfs: file system
+- Yarn: framework for job scheduling and resource management
+- MapReduce: used for parallel processing of large data sets
+
+
+
+## Map reduce:
+> It is a powerful paradigm for parallel computation
+
+Example:-
+
+![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588843685196_image.png)
+
+![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588843699379_image.png)
+
+
+**Architecture:**
+
+![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588844432282_image.png)
+
+![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588843787296_image.png)
+
+
+**Resource Manager(YARN):**
+
+- **Scheduler**: Schedulers’ task is to distribute resources to the running applications
+- **Application Manager:** manages applications running in the cluster.
+![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588844169706_image.png)
+
+
+**How does it work:-**
+
+![](https://paper-attachments.dropbox.com/s_C5973B4F468A8D5F8B1A98367C70AA1D386A2E1DA402B128C7EFCA2135252821_1588844195897_image.png)
+
